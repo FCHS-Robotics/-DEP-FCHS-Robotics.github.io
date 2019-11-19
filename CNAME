@@ -1,1 +1,11 @@
-test.fchsrobotics.cf;
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+var a = "you are gay"
+for(a=1;a=69;a++){
+document.alert(a)
+}
+</body>
+</html>
