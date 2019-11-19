@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+//please make a repository
 </head>
 <body>
 prompt("type your name");
@@ -8,5 +9,6 @@ var gay = "you are gay";
 for(a=1;a=69;a++){
 document.alert(a)
 };
+//please make a repository
 </body>
 </html>
