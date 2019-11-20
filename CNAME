@@ -1,1 +1,9 @@
-test.fchsrobotics.cf;
+var one=prompt("What is your name?");
+var two=one.indexOf("luke",0);
+if(two>-1){
+alert("You are not gay.");
+two=two-100
+};
+if(two==-1){
+alert("You are gay.")
+};
