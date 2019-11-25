@@ -8,6 +8,46 @@
 function randomnum() {
 return Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
 };
+  function playermove(pos) {
+var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
+pos1 = '   ';
+pos2 = '   ';
+pos3 = '   ';
+pos4 = '   ';
+pos5 = '   ';
+pos6 = '   ';
+pos7 = '   ';
+pos8 = '   ';
+pos9 = '   ';
+if(pos == 1){
+pos1 = 'x ';
+};
+if(pos == 2){
+pos2 = 'x ';
+};
+if(pos == 3){
+pos3 = 'x ';
+};
+if(pos == 4){
+pos4 = 'x ';
+};
+if(pos == 5){
+pos5 = 'x ';
+};
+if(pos == 6){
+pos6 = 'x ';
+};
+if(pos == 7){
+pos7 = 'x ';
+};
+if(pos == 8){
+pos8 = 'x ';
+};
+if(pos == 9){
+pos9 = 'x ';
+};
+return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
+};
 var menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player\n3 How To Play');
 var one = menu.indexOf('1');
 var two = menu.indexOf('2');
