@@ -60,34 +60,61 @@ two = menu.indexOf('2');
 };
 if(one>-1){
 var m1 = prompt('Tic-Tac-Toe\n   |   |     1|2|3\n   |   |     4|5|6\n   |   |     7|8|9');
-var num1,num2,num3,num4,num5,num6,num7,num8,num9;
-num1 = false;num2 = false;num3 = false;num4 = false;num5 = false;num6 = false;num7 = false;num8 = false;num9 = false;
+var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
+pos1 = false;pos2 = false;pos3 = false;pos4 = false;pos5 = false;pos6 = false;pos7 = false;pos8 = false;pos9 = false;
+if(m1.indexOf('1')>-1){
+if(pos1 == false){
+var m2 = prompt(playermove(1));
+pos1 = true;
+};
+};
+if(m1.indexOf('2')>-1){
+if(pos2 == false){
+var m2 = prompt(playermove(2));
+pos2 = true;
+};
+};
 if(m1>-1){
-
+if(pos3 == false){
+var m2 = prompt(playermove(3));
+pos3 = true;
 };
-if(m1>-2){
-
 };
-if(m1>-3){
-
+if(m1>-1){
+if(pos4 == false){
+var m2 = prompt(playermove(4));
+pos4 = true;
 };
-if(m1>-4){
-
 };
-if(m1>-5){
-
+if(m1>-1){
+if(pos5 == false){
+var m2 = prompt(playermove(5));
+pos5 = true;
 };
-if(m1>-6){
-
 };
-if(m1>-7){
-
+if(m1>-1){
+if(pos6 == false){
+var m2 = prompt(playermove(6));
+pos6 = true;
 };
-if(m1>-8){
-
 };
-if(m1>-9){
-
+if(m1>-1){
+if(pos7 == false){
+var m2 = prompt(playermove(7));
+pos7 = true;
+};
+};
+if(m1>-1){
+if(pos8 == false){
+var m2 = prompt(playermove(8));
+pos8 = true;
+};
+};
+if(m1>-1){
+if(pos9 == false){
+var m2 = prompt(playermove(9));
+pos9 = true;
+};
 };
 };
 if(two>-1){
