@@ -5,8 +5,58 @@
 //please do not erase or change ANYTHING in this
 //if you have any suggestions, put it in a comment
 //javascript:
-function randomnum() {
-return Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+function aimove(pos,first,p1,p2,p3,p4,p5,p6,p7,p8,p9){
+var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
+if(p1 == false){
+pos1 = '   ';
+}else{
+pos1 = 'x ';
+};
+if(p2 == false){
+pos2 = '   ';
+}else{
+pos2 = 'x ';
+};
+if(p3 == false){
+pos3 = '   ';
+}else{
+pos3 = 'x ';
+};
+if(p4 == false){
+pos4 = '   ';
+}else{
+pos4 = 'x ';
+};
+if(p5 == false){
+pos5 = '   ';
+}else{
+pos5 = 'x ';
+};
+if(p6 == false){
+pos6 = '   ';
+}else{
+pos6 = 'x ';
+};
+if(p7 == false){
+pos7 = '   ';
+}else{
+pos7 = 'x ';
+};
+if(p8 == false){
+pos8 = '   ';
+}else{
+pos8 = 'x ';
+};
+if(p9 == false){
+pos9 = '   ';
+}else{
+pos9 = 'x ';
+};
+if(first == true){
+var randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
+}else{
+};
 };
 function playermove(pos,p1,p2,p3,p4,p5,p6,p7,p8,p9) {
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
