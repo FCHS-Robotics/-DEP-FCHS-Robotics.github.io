@@ -95,10 +95,10 @@ one = menu.indexOf('1');
 two = menu.indexOf('2');
 };
 if(one>-1){
-var m1 = prompt('Tic-Tac-Toe\n   |    |     1|2|3\n   |    |     4|5|6\n   |    |     7|8|9');
+var m1 = prompt('Tic-Tac-Toe\n    |   |     1|2|3\n    |   |     4|5|6\n    |   |     7|8|9');
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
 pos1 = false;pos2 = false;pos3 = false;pos4 = false;pos5 = false;pos6 = false;pos7 = false;pos8 = false;pos9 = false;
-if(m1.indexOf('1')>-1){
+if(m1.indexOf('1')!=-1){
 if(pos1 == false){
 var m2 = prompt(playermove(1,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos1 = true;
@@ -106,7 +106,7 @@ pos1 = true;
 alert('no');
 };
 };
-if(m1.indexOf('2')>-1){
+if(m1.indexOf('2')!=-1){
 if(pos2 == false){
 var m2 = prompt(playermove(2,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos2 = true;
@@ -114,7 +114,7 @@ pos2 = true;
 alert('no');
 };
 };
-if(m1.indexOf('3')>-1){
+if(m1.indexOf('3')!=-1){
 if(pos3 == false){
 var m2 = prompt(playermove(3,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos3 = true
@@ -122,7 +122,7 @@ pos3 = true
 alert('no');
 };
 };
-if(m1.indexOf('4')>-1){
+if(m1.indexOf('4')!=-1){
 if(pos4 == false){
 var m2 = prompt(playermove(4,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos4 = true;
@@ -130,7 +130,7 @@ pos4 = true;
 alert('no');
 };
 };
-if(m1.indexOf('5')>-1){
+if(m1.indexOf('5')!=-1){
 if(pos5 == false){
 var m2 = prompt(playermove(5,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos5 = true;
@@ -138,7 +138,7 @@ pos5 = true;
 alert('no');
 };
 };
-if(m1.indexOf('6')>-1){
+if(m1.indexOf('6')!=-1){
 if(pos6 == false){
 var m2 = prompt(playermove(6,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos6 = true;
@@ -146,7 +146,7 @@ pos6 = true;
 alert('no');
 };
 };
-if(m1.indexOf('7')>-1){
+if(m1.indexOf('7')!=-1){
 if(pos7 == false){
 var m2 = prompt(playermove(7,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos7 = true;
@@ -154,7 +154,7 @@ pos7 = true;
 alert('no');
 };
 };
-if(m1.indexOf('8')>-1){
+if(m1.indexOf('8')!=-1){
 if(pos8 == false){
 var m2 = prompt(playermove(8,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos8 = true;
@@ -162,7 +162,7 @@ pos8 = true;
 alert('no');
 };
 };
-if(m1.indexOf('9')>-1){
+if(m1.indexOf('9')!=-1){
 if(pos9 == false){
 var m2 = prompt(playermove(9,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos9 = true;
