@@ -9,100 +9,262 @@
 //And luke you might want to clean this code up bc it looks aids only to place one X and thats it
 function aimove(pos,first,p1,p2,p3,p4,p5,p6,p7,p8,p9){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-if(p1 == false){
-pos1 = '   ';
-}else{
-pos1 = 'x ';
-};
-if(p2 == false){
-pos2 = '   ';
-}else{
-pos2 = 'x ';
-};
-if(p3 == false){
-pos3 = '   ';
-}else{
-pos3 = 'x ';
-};
-if(p4 == false){
-pos4 = '   ';
-}else{
-pos4 = 'x ';
-};
-if(p5 == false){
-pos5 = '   ';
-}else{
-pos5 = 'x ';
-};
-if(p6 == false){
-pos6 = '   ';
-}else{
-pos6 = 'x ';
-};
-if(p7 == false){
-pos7 = '   ';
-}else{
-pos7 = 'x ';
-};
-if(p8 == false){
-pos8 = '   ';
-}else{
-pos8 = 'x ';
-};
-if(p9 == false){
-pos9 = '   ';
-}else{
-pos9 = 'x ';
-};
 if(first == true){
 var randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+if(randomnum == 1){
+if(p1 == 0){
+pos1 = 2
+};
+};
+if(randomnum == 2){
+if(p1 == 0){
+pos2 = 2
+};
+};
+if(randomnum == 3){
+if(p1 == 0){
+pos3 = 2
+};
+};
+if(randomnum == 4){
+if(p1 == 0){
+pos4 = 2
+};
+};
+if(randomnum == 5){
+if(p1 == 0){
+pos5 = 2
+};
+};
+if(randomnum == 6){
+if(p1 == 0){
+pos6 = 2
+};
+};
+if(randomnum == 7){
+if(p1 == 0){
+pos7 = 2
+};
+};
+if(randomnum == 8){
+if(p1 == 0){
+pos8 = 2
+};
+};
+if(randomnum == 9){
+if(p1 == 0){
+pos9 = 2
+};
+};
+if(p1 == 0){
+pos1 = '   ';
+}else{
+if(p1 == 1){
+pos1 = 'x ';
+}else{
+pos1 = 'o ';
+};
+};
+if(p2 == 0){
+pos2 = '   ';
+}else{
+if(p2 == 1){
+pos2 = 'x ';
+}else{
+pos2 = 'o ';
+};
+};
+if(p3 == 0){
+pos3 = '   ';
+}else{
+if(p3 == 1){
+pos3 = 'x ';
+}else{
+pos3 = 'o ';
+};
+};
+if(p4 == 0){
+pos4 = '   ';
+}else{
+if(p4 == 1){
+pos4 = 'x ';
+}else{
+pos4 = 'o ';
+};
+};
+if(p5 == 0){
+pos5 = '   ';
+}else{
+if(p5 == 1){
+pos5 = 'x ';
+}else{
+pos5 = 'o ';
+};
+};
+if(p6 == 0){
+pos6 = '   ';
+}else{
+if(p6 == 1){
+pos6 = 'x ';
+}else{
+pos6 = 'o ';
+};
+};
+if(p7 == 0){
+pos7 = '   ';
+}else{
+if(p7 == 1){
+pos7 = 'x ';
+}else{
+pos7 = 'o ';
+};
+};
+if(p8 == 0){
+pos8 = '   ';
+}else{
+if(p8 == 1){
+pos8 = 'x ';
+}else{
+pos8 = 'o ';
+};
+};
+if(p9 == 0){
+pos9 = '   ';
+}else{
+if(p9 == 1){
+pos9 = 'x ';
+}else{
+pos9 = 'o ';
+};
+};
 return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
 }else{
+if(p1 == 0){
+pos1 = '   ';
+}else{
+if(p1 == 1){
+pos1 = 'x ';
+}else{
+pos1 = 'o ';
+};
+};
+if(p2 == 0){
+pos2 = '   ';
+}else{
+if(p2 == 1){
+pos2 = 'x ';
+}else{
+pos2 = 'o ';
+};
+};
+if(p3 == 0){
+pos3 = '   ';
+}else{
+if(p3 == 1){
+pos3 = 'x ';
+}else{
+pos3 = 'o ';
+};
+};
+if(p4 == 0){
+pos4 = '   ';
+}else{
+if(p4 == 1){
+pos4 = 'x ';
+}else{
+pos4 = 'o ';
+};
+};
+if(p5 == 0){
+pos5 = '   ';
+}else{
+if(p5 == 1){
+pos5 = 'x ';
+}else{
+pos5 = 'o ';
+};
+};
+if(p6 == 0){
+pos6 = '   ';
+}else{
+if(p6 == 1){
+pos6 = 'x ';
+}else{
+pos6 = 'o ';
+};
+};
+if(p7 == 0){
+pos7 = '   ';
+}else{
+if(p7 == 1){
+pos7 = 'x ';
+}else{
+pos7 = 'o ';
+};
+};
+if(p8 == 0){
+pos8 = '   ';
+}else{
+if(p8 == 1){
+pos8 = 'x ';
+}else{
+pos8 = 'o ';
+};
+};
+if(p9 == 0){
+pos9 = '   ';
+}else{
+if(p9 == 1){
+pos9 = 'x ';
+}else{
+pos9 = 'o ';
+};
+};
 };
 };
 function playermove(pos,p1,p2,p3,p4,p5,p6,p7,p8,p9) {
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-if(p1 == false){
+if(p1 == 0){
 pos1 = '   ';
 }else{
 pos1 = 'x ';
 };
-if(p2 == false){
+if(p2 == 0){
 pos2 = '   ';
 }else{
 pos2 = 'x ';
 };
-if(p3 == false){
+if(p3 == 0){
 pos3 = '   ';
 }else{
 pos3 = 'x ';
 };
-if(p4 == false){
+if(p4 == 0){
 pos4 = '   ';
 }else{
 pos4 = 'x ';
 };
-if(p5 == false){
+if(p5 == 0){
 pos5 = '   ';
 }else{
 pos5 = 'x ';
 };
-if(p6 == false){
+if(p6 == 0){
 pos6 = '   ';
 }else{
 pos6 = 'x ';
 };
-if(p7 == false){
+if(p7 == 0){
 pos7 = '   ';
 }else{
 pos7 = 'x ';
 };
-if(p8 == false){
+if(p8 == 0){
 pos8 = '   ';
 }else{
 pos8 = 'x ';
 };
-if(p9 == false){
+if(p9 == 0){
 pos9 = '   ';
 }else{
 pos9 = 'x ';
@@ -149,75 +311,75 @@ two = menu.indexOf('2');
 if(one>-1){
 var m1 = prompt('Tic-Tac-Toe\n    |   |     1|2|3\n    |   |     4|5|6\n    |   |     7|8|9');
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-pos1 = false;pos2 = false;pos3 = false;pos4 = false;pos5 = false;pos6 = false;pos7 = false;pos8 = false;pos9 = false;
+pos1 = 0;pos2 = 0;pos3 = 0;pos4 = 0;pos5 = 0;pos6 = 0;pos7 = 0;pos8 = 0;pos9 = 0;
 if(m1.indexOf('1')!=-1){
-if(pos1 == false){
+if(pos1 == 0){
 var m2 = prompt(playermove(1,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos1 = true;
+pos1 = 1;
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('2')!=-1){
-if(pos2 == false){
+if(pos2 == 0){
 var m2 = prompt(playermove(2,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos2 = true;
+pos2 = 1;
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('3')!=-1){
-if(pos3 == false){
+if(pos3 == 0){
 var m2 = prompt(playermove(3,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos3 = true
+pos3 = 1
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('4')!=-1){
-if(pos4 == false){
+if(pos4 == 0){
 var m2 = prompt(playermove(4,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos4 = true;
+pos4 = 1;
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('5')!=-1){
-if(pos5 == false){
+if(pos5 == 0){
 var m2 = prompt(playermove(5,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos5 = true;
+pos5 = 1;
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('6')!=-1){
-if(pos6 == false){
+if(pos6 == 0){
 var m2 = prompt(playermove(6,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos6 = true;
+pos6 = 1;
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('7')!=-1){
-if(pos7 == false){
+if(pos7 == 0){
 var m2 = prompt(playermove(7,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos7 = true;
+pos7 = 1;
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('8')!=-1){
-if(pos8 == false){
+if(pos8 == 0){
 var m2 = prompt(playermove(8,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos8 = true;
+pos8 = 1;
 }else{
 alert('no');
 };
 };
 if(m1.indexOf('9')!=-1){
-if(pos9 == false){
+if(pos9 == 0){
 var m2 = prompt(playermove(9,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos9 = true;
+pos9 = 1;
 }else{
 alert('no');
 };
