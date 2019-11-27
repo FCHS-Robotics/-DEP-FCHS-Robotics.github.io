@@ -5,8 +5,6 @@
 //please do not erase or change ANYTHING in this
 //if you have any suggestions, put it in a comment
 //javascript:
-//will this work in reply,and why not just add a turn system that reads if its odd/even to see to place X or O
-//And luke you might want to clean this code up bc it looks aids only to place one X and thats it
 function aimove(pos,first,p1,p2,p3,p4,p5,p6,p7,p8,p9){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
 if(first == true){
@@ -15,55 +13,63 @@ if(randomnum == 1){
 if(p1 == 0){
 pos1 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 2 + 1) ) + 2;
+pos2 = 2
+};
 };
 if(randomnum == 2){
 if(p2 == 0){
 pos2 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+pos1 = 2
+};
 };
 if(randomnum == 3){
 if(p3 == 0){
 pos3 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+pos4 = 2
+};
 };
 if(randomnum == 4){
 if(p4 == 0){
 pos4 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+pos3 = 2
+};
 };
 if(randomnum == 5){
 if(p5 == 0){
 pos5 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+pos6 = 2
+};
 };
 if(randomnum == 6){
 if(p6 == 0){
 pos6 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+pos5 = 2
+};
 };
 if(randomnum == 7){
 if(p7 == 0){
 pos7 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+pos8 = 2
+};
 };
 if(randomnum == 8){
 if(p8 == 0){
 pos8 = 2
 }else{
-randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
+pos7 = 2};
 };
 if(randomnum == 9){
 if(p9 == 0){
 pos9 = 2
 }else{
 pos1 = 2;
+};
 };
 if(p1 == 0){
 pos1 = '   ';
