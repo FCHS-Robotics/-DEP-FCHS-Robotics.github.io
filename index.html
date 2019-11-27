@@ -5,7 +5,9 @@
 //please do not erase or change ANYTHING in this
 //if you have any suggestions, put it in a comment
 //javascript:
-function aimove(pos,first,p1,p2,p3,p4,p5,p6,p7,p8,p9){
+
+function playermove(first,pos,p1,p2,p3,p4,p5,p6,p7,p8,p9) {
+function aimove(first,p1,p2,p3,p4,p5,p6,p7,p8,p9){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
 if(first == true){
 var randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
@@ -154,6 +156,16 @@ pos9 = 'o ';
 };
 return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
 }else{
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
 if(p1 == 0){
 pos1 = '   ';
 }else{
@@ -237,80 +249,59 @@ pos9 = 'o ';
 };
 };
 };
-function playermove(pos,p1,p2,p3,p4,p5,p6,p7,p8,p9) {
-var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-if(p1 == 0){
-pos1 = '   ';
-}else{
-pos1 = 'x ';
-};
-if(p2 == 0){
-pos2 = '   ';
-}else{
-pos2 = 'x ';
-};
-if(p3 == 0){
-pos3 = '   ';
-}else{
-pos3 = 'x ';
-};
-if(p4 == 0){
-pos4 = '   ';
-}else{
-pos4 = 'x ';
-};
-if(p5 == 0){
-pos5 = '   ';
-}else{
-pos5 = 'x ';
-};
-if(p6 == 0){
-pos6 = '   ';
-}else{
-pos6 = 'x ';
-};
-if(p7 == 0){
-pos7 = '   ';
-}else{
-pos7 = 'x ';
-};
-if(p8 == 0){
-pos8 = '   ';
-}else{
-pos8 = 'x ';
-};
-if(p9 == 0){
-pos9 = '   ';
-}else{
-pos9 = 'x ';
-};
+//end of aimove;
+
+//end of aimove;
+
+//end of aimove;
+
+//end of aimove;
+
+//end of aimove;
+
+//end of aimove;
 if(pos == 1){
-pos1 = 'x ';
+p1 = 1;
 };
 if(pos == 2){
-pos2 = 'x ';
+p2 = 1;
 };
 if(pos == 3){
-pos3 = 'x ';
+p3 = 1;
 };
 if(pos == 4){
-pos4 = 'x ';
+p4 = 1;
 };
 if(pos == 5){
-pos5 = 'x ';
+p5 = 1;
 };
 if(pos == 6){
-pos6 = 'x ';
+p6 = 1;
 };
 if(pos == 7){
-pos7 = 'x ';
+p7 = 1;
 };
 if(pos == 8){
-pos8 = 'x ';
+p8 = 1;
 };
 if(pos == 9){
-pos9 = 'x ';
+p9 = 1;
 };
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+  //;
+aimove(first,p1,p2,p3,p4,p5,p6,p7,p8,p9);
 return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
 };
 var menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player\n3 How To Play');
@@ -329,7 +320,7 @@ var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
 pos1 = 0;pos2 = 0;pos3 = 0;pos4 = 0;pos5 = 0;pos6 = 0;pos7 = 0;pos8 = 0;pos9 = 0;
 if(m1.indexOf('1')!=-1){
 if(pos1 == 0){
-var m2 = prompt(playermove(1,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,1,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos1 = 1;
 }else{
 alert('no');
@@ -337,7 +328,7 @@ alert('no');
 };
 if(m1.indexOf('2')!=-1){
 if(pos2 == 0){
-var m2 = prompt(playermove(2,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,2,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos2 = 1;
 }else{
 alert('no');
@@ -345,7 +336,7 @@ alert('no');
 };
 if(m1.indexOf('3')!=-1){
 if(pos3 == 0){
-var m2 = prompt(playermove(3,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,3,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos3 = 1
 }else{
 alert('no');
@@ -353,7 +344,7 @@ alert('no');
 };
 if(m1.indexOf('4')!=-1){
 if(pos4 == 0){
-var m2 = prompt(playermove(4,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,4,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos4 = 1;
 }else{
 alert('no');
@@ -361,7 +352,7 @@ alert('no');
 };
 if(m1.indexOf('5')!=-1){
 if(pos5 == 0){
-var m2 = prompt(playermove(5,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,5,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos5 = 1;
 }else{
 alert('no');
@@ -369,7 +360,7 @@ alert('no');
 };
 if(m1.indexOf('6')!=-1){
 if(pos6 == 0){
-var m2 = prompt(playermove(6,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,6,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos6 = 1;
 }else{
 alert('no');
@@ -377,7 +368,7 @@ alert('no');
 };
 if(m1.indexOf('7')!=-1){
 if(pos7 == 0){
-var m2 = prompt(playermove(7,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,7,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos7 = 1;
 }else{
 alert('no');
@@ -385,7 +376,7 @@ alert('no');
 };
 if(m1.indexOf('8')!=-1){
 if(pos8 == 0){
-var m2 = prompt(playermove(8,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,8,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos8 = 1;
 }else{
 alert('no');
@@ -393,7 +384,7 @@ alert('no');
 };
 if(m1.indexOf('9')!=-1){
 if(pos9 == 0){
-var m2 = prompt(playermove(9,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+var m2 = prompt(playermove(true,9,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos9 = 1;
 }else{
 alert('no');
