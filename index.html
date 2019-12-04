@@ -5,8 +5,91 @@
 
 
 //javascript:
-
-function playermove(first,pos,p1,p2,p3,p4,p5,p6,p7,p8,p9) {
+function converttostring(p1,p2,p3,p4,p5,p6,p7,p8,p9){
+var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
+if(p1 == 0){
+pos1 = ' '+' '+' ';
+}else{
+if(p1 == 1){
+pos1 = 'x ';
+}else{
+pos1 = 'o ';
+};
+};
+if(p2 == 0){
+pos2 = ' '+' '+' ';
+}else{
+if(p2 == 1){
+pos2 = 'x ';
+}else{
+pos2 = 'o ';
+};
+};
+if(p3 == 0){
+pos3 = ' '+' '+' ';
+}else{
+if(p3 == 1){
+pos3 = 'x ';
+}else{
+pos3 = 'o ';
+};
+};
+if(p4 == 0){
+pos4 = ' '+' '+' ';
+}else{
+if(p4 == 1){
+pos4 = 'x ';
+}else{
+pos4 = 'o ';
+};
+};
+if(p5 == 0){
+pos5 = ' '+' '+' ';
+}else{
+if(p5 == 1){
+pos5 = 'x ';
+}else{
+pos5 = 'o ';
+};
+};
+if(p6 == 0){
+pos6 = ' '+' '+' ';
+}else{
+if(p6 == 1){
+pos6 = 'x ';
+}else{
+pos6 = 'o ';
+};
+};
+if(p7 == 0){
+pos7 = ' '+' '+' ';
+}else{
+if(p7 == 1){
+pos7 = 'x ';
+}else{
+pos7 = 'o ';
+};
+};
+if(p8 == 0){
+pos8 = ' '+' '+' ';
+}else{
+if(p8 == 1){
+pos8 = 'x ';
+}else{
+pos8 = 'o ';
+};
+};
+if(p9 == 0){
+pos9 = ' '+' '+' ';
+}else{
+if(p9 == 1){
+pos9 = 'x ';
+}else{
+pos9 = 'o ';
+};
+};
+return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
+};
 function aimove(first,p1,p2,p3,p4,p5,p6,p7,p8,p9){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
 if(first == true){
@@ -239,206 +322,73 @@ pos9 = 'o ';
 };
 };
 };
-if(pos == 1){
-p1 = 1;
-};
-if(pos == 2){
-p2 = 1;
-};
-if(pos == 3){
-p3 = 1;
-};
-if(pos == 4){
-p4 = 1;
-};
-if(pos == 5){
-p5 = 1;
-};
-if(pos == 6){
-p6 = 1;
-};
-if(pos == 7){
-p7 = 1;
-};
-if(pos == 8){
-p8 = 1;
-};
-if(pos == 9){
-p9 = 1;
-};
-if(p1 == 0){
-pos1 = ' '+' '+' ';
-}else{
-if(p1 == 1){
-pos1 = 'x ';
-}else{
-pos1 = 'o ';
-};
-};
-if(p2 == 0){
-pos2 = ' '+' '+' ';
-}else{
-if(p2 == 1){
-pos2 = 'x ';
-}else{
-pos2 = 'o ';
-};
-};
-if(p3 == 0){
-pos3 = ' '+' '+' ';
-}else{
-if(p3 == 1){
-pos3 = 'x ';
-}else{
-pos3 = 'o ';
-};
-};
-if(p4 == 0){
-pos4 = ' '+' '+' ';
-}else{
-if(p4 == 1){
-pos4 = 'x ';
-}else{
-pos4 = 'o ';
-};
-};
-if(p5 == 0){
-pos5 = ' '+' '+' ';
-}else{
-if(p5 == 1){
-pos5 = 'x ';
-}else{
-pos5 = 'o ';
-};
-};
-if(p6 == 0){
-pos6 = ' '+' '+' ';
-}else{
-if(p6 == 1){
-pos6 = 'x ';
-}else{
-pos6 = 'o ';
-};
-};
-if(p7 == 0){
-pos7 = ' '+' '+' ';
-}else{
-if(p7 == 1){
-pos7 = 'x ';
-}else{
-pos7 = 'o ';
-};
-};
-if(p8 == 0){
-pos8 = ' '+' '+' ';
-}else{
-if(p8 == 1){
-pos8 = 'x ';
-}else{
-pos8 = 'o ';
-};
-};
-if(p9 == 0){
-pos9 = ' '+' '+' ';
-}else{
-if(p9 == 1){
-pos9 = 'x ';
-}else{
-pos9 = 'o ';
-};
-};
-
-aimove(first,p1,p2,p3,p4,p5,p6,p7,p8,p9);
-return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
-};
 var menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player\n3 How To Play');
-var one = menu.indexOf('1');
-var two = menu.indexOf('2');
-var three = menu.indexOf('3');
-if(three>-1){
+if(menu.indexOf('3')>-1){
 alert('-The board on the right with the numbers is a map of which numbers corrospond to locations on the board\n-Type the number that corrosponds with the move you wish to make and press enter or click "ok"\n-A new pop-up box will show up displaying your move\n-If at any time you want to cancel, click cancel');
 menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player');
 one = menu.indexOf('1');
 two = menu.indexOf('2');
 };
-if(one>-1){
+if(menu.indexOf('1')>-1){
 var m1 = prompt('Tic-Tac-Toe\n    |   |      1|2|3\n    |   |      4|5|6\n    |   |      7|8|9');
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
 pos1 = 0;pos2 = 0;pos3 = 0;pos4 = 0;pos5 = 0;pos6 = 0;pos7 = 0;pos8 = 0;pos9 = 0;
 if(m1.indexOf('1')!=-1){
 if(pos1 == 0){
-var m2 = prompt(playermove(true,1,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos1 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('2')!=-1){
 if(pos2 == 0){
-var m2 = prompt(playermove(true,2,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos2 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('3')!=-1){
 if(pos3 == 0){
-var m2 = prompt(playermove(true,3,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-pos3 = 1
-}else{
-alert('no');
+pos3 = 1;
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('4')!=-1){
 if(pos4 == 0){
-var m2 = prompt(playermove(true,4,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos4 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('5')!=-1){
-if(pos5 == 0){
-var m2 = prompt(playermove(true,5,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
+if(pos5 == 0
 pos5 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('6')!=-1){
 if(pos6 == 0){
-var m2 = prompt(playermove(true,6,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos6 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('7')!=-1){
 if(pos7 == 0){
-var m2 = prompt(playermove(true,7,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos7 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('8')!=-1){
 if(pos8 == 0){
-var m2 = prompt(playermove(true,8,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos8 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('9')!=-1){
 if(pos9 == 0){
-var m2 = prompt(playermove(true,9,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 pos9 = 1;
-}else{
-alert('no');
+var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 };
-if(two>-1){
+if(menu.indexOf('2')>-1){
 alert('2')
 };
 </script>
