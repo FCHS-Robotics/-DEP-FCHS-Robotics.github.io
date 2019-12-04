@@ -3,6 +3,9 @@
 <body>
 <script>
 
+//lots of changes
+//clearing unnecessary lines
+//converttostring-- gets locations and converts them to a string that will then be used in a prompt
 
 //javascript:
 function converttostring(p1,p2,p3,p4,p5,p6,p7,p8,p9){
@@ -147,7 +150,8 @@ if(randomnum == 8){
 if(p8 == 0){
 pos8 = 2
 }else{
-pos9 = 2};
+pos9 = 2
+};
 };
 if(randomnum == 9){
 if(p9 == 0){
@@ -156,178 +160,13 @@ pos9 = 2
 pos1 = 2;
 };
 };
-if(p1 == 0){
-pos1 = ' '+' '+' ';
 }else{
-if(p1 == 1){
-pos1 = 'x ';
-}else{
-pos1 = 'o ';
-};
-};
-if(p2 == 0){
-pos2 = ' '+' '+' ';
-}else{
-if(p2 == 1){
-pos2 = 'x ';
-}else{
-pos2 = 'o ';
-};
-};
-if(p3 == 0){
-pos3 = ' '+' '+' ';
-}else{
-if(p3 == 1){
-pos3 = 'x ';
-}else{
-pos3 = 'o ';
-};
-};
-if(p4 == 0){
-pos4 = ' '+' '+' ';
-}else{
-if(p4 == 1){
-pos4 = 'x ';
-}else{
-pos4 = 'o ';
-};
-};
-if(p5 == 0){
-pos5 = ' '+' '+' ';
-}else{
-if(p5 == 1){
-pos5 = 'x ';
-}else{
-pos5 = 'o ';
-};
-};
-if(p6 == 0){
-pos6 = ' '+' '+' ';
-}else{
-if(p6 == 1){
-pos6 = 'x ';
-}else{
-pos6 = 'o ';
-};
-};
-if(p7 == 0){
-pos7 = ' '+' '+'';
-}else{
-if(p7 == 1){
-pos7 = 'x ';
-}else{
-pos7 = 'o ';
-};
-};
-if(p8 == 0){
-pos8 = ' '+' '+' ';
-}else{
-if(p8 == 1){
-pos8 = 'x ';
-}else{
-pos8 = 'o ';
-};
-};
-if(p9 == 0){
-pos9 = ' '+' '+' ';
-}else{
-if(p9 == 1){
-pos9 = 'x ';
-}else{
-pos9 = 'o ';
-};
-};
-return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
-}else{
-if(p1 == 0){
-pos1 = ' '+' '+' ';
-}else{
-if(p1 == 1){
-pos1 = 'x ';
-}else{
-pos1 = 'o ';
-};
-};
-if(p2 == 0){
-pos2 = ' '+' '+' ';
-}else{
-if(p2 == 1){
-pos2 = 'x ';
-}else{
-pos2 = 'o ';
-};
-};
-if(p3 == 0){
-pos3 = ' '+' '+' ';
-}else{
-if(p3 == 1){
-pos3 = 'x ';
-}else{
-pos3 = 'o ';
-};
-};
-if(p4 == 0){
-pos4 = ' '+' '+' ';
-}else{
-if(p4 == 1){
-pos4 = 'x ';
-}else{
-pos4 = 'o ';
-};
-};
-if(p5 == 0){
-pos5 = ' '+' '+' ';
-}else{
-if(p5 == 1){
-pos5 = 'x ';
-}else{
-pos5 = 'o ';
-};
-};
-if(p6 == 0){
-pos6 = ' '+' '+' ';
-}else{
-if(p6 == 1){
-pos6 = 'x ';
-}else{
-pos6 = 'o ';
-};
-};
-if(p7 == 0){
-pos7 = ' '+' '+' ';
-}else{
-if(p7 == 1){
-pos7 = 'x ';
-}else{
-pos7 = 'o ';
-};
-};
-if(p8 == 0){
-pos8 = ' '+' '+' ';
-}else{
-if(p8 == 1){
-pos8 = 'x ';
-}else{
-pos8 = 'o ';
-};
-};
-if(p9 == 0){
-pos9 = ' '+' '+' ';
-}else{
-if(p9 == 1){
-pos9 = 'x ';
-}else{
-pos9 = 'o ';
-};
-};
 };
 };
 var menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player\n3 How To Play');
 if(menu.indexOf('3')>-1){
 alert('-The board on the right with the numbers is a map of which numbers corrospond to locations on the board\n-Type the number that corrosponds with the move you wish to make and press enter or click "ok"\n-A new pop-up box will show up displaying your move\n-If at any time you want to cancel, click cancel');
 menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player');
-one = menu.indexOf('1');
-two = menu.indexOf('2');
 };
 if(menu.indexOf('1')>-1){
 var m1 = prompt('Tic-Tac-Toe\n    |   |      1|2|3\n    |   |      4|5|6\n    |   |      7|8|9');
@@ -358,7 +197,7 @@ var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
 };
 if(m1.indexOf('5')!=-1){
-if(pos5 == 0
+if(pos5 == 0){
 pos5 = 1;
 var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
