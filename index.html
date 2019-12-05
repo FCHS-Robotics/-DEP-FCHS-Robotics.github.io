@@ -50,65 +50,30 @@ if(randomnum==8){if(p8==0){return 8}else{return 9}};
 if(randomnum==9){if(p9==0){return 9}else{return 1}};
 }};
 var menu=prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player\n3 How To Play');
-if(menu.indexOf('3')>-1){alert('-The board on the right with the numbers is a map of which numbers corrospond to locations on the board'
+if(menu.indexOf('3')>-1){alert('-The board on the right with the numbers is a map of which numbers corrospond'
++' to locations on the board'
 +'\n-Type the number that corrosponds with the move you wish to make and press enter or click "ok"'
 +'\n-A new pop-up box will show up displaying your move\n-If at any time you want to cancel, click cancel');
 menu=prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player')};
 if(menu.indexOf('1')>-1){
 var m1=prompt('Tic-Tac-Toe\n    |   |      1|2|3\n    |   |      4|5|6\n    |   |      7|8|9');
-var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-pos1=0;pos2=0;pos3=0;pos4=0;pos5=0;pos6=0;pos7=0;pos8=0;pos9=0;
-if(m1.indexOf('1')!=-1){
-if(pos1 == 0){
-pos1 = 1;
+var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;pos1=0;pos2=0;pos3=0;pos4=0;pos5=0;pos6=0;pos7=0;pos8=0;pos9=0;
+if(m1.indexOf('1')!=-1){if(pos1==0){pos1=1}};
+if(m1.indexOf('2')!=-1){if(pos2==0){pos2=1}};
+if(m1.indexOf('3')!=-1){if(pos3==0){pos3=1}};
+if(m1.indexOf('4')!=-1){if(pos4==0){pos4=1}};
+if(m1.indexOf('5')!=-1){if(pos5==0){pos5=1}};
+if(m1.indexOf('6')!=-1){if(pos6==0){pos6=1}};
+if(m1.indexOf('7')!=-1){if(pos7==0){pos7=1}};
+if(m1.indexOf('8')!=-1){if(pos8==0){pos8=1}};
+if(m1.indexOf('9')!=-1){if(pos9==0){pos9=1}};
+aim=aimove(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9);
+if(aim==1){pos1=2};if(aim==2){pos2=2};if(aim==3){pos3=2};
+if(aim==4){pos4=2};if(aim==5){pos5=2};if(aim==6){pos6=2};
+if(aim==7){pos7=2};if(aim==8){pos8=2};if(aim==9){pos9=2};
+m1=prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
 };
-};
-if(m1.indexOf('2')!=-1){
-if(pos2 == 0){
-pos2 = 1;
-};
-};
-if(m1.indexOf('3')!=-1){
-if(pos3 == 0){
-pos3 = 1;
-};
-};
-if(m1.indexOf('4')!=-1){
-if(pos4 == 0){
-pos4 = 1;
-};
-};
-if(m1.indexOf('5')!=-1){
-if(pos5 == 0){
-pos5 = 1;
-};
-};
-if(m1.indexOf('6')!=-1){
-if(pos6 == 0){
-pos6 = 1;
-};
-};
-if(m1.indexOf('7')!=-1){
-if(pos7 == 0){
-pos7 = 1;
-};
-};
-if(m1.indexOf('8')!=-1){
-if(pos8 == 0){
-pos8 = 1;
-};
-};
-if(m1.indexOf('9')!=-1){
-if(pos9 == 0){
-pos9 = 1;
-};
-};
-aim1=aimove(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9);
-var m2 = prompt(converttostring(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9));
-};
-if(menu.indexOf('2')>-1){
-alert('2')
-};
+if(menu.indexOf('2')>-1){alert('2')};
 </script>
 </body>
 </html>
