@@ -22,6 +22,9 @@ var block = 0;
 if(p1==1){if(p2==1){block=1;return 3}};if(p2==1){if(p3==1){block=1;return 1}};if(p1==1){if(p3==1){block=1;return 2}};
 if(p4==1){if(p5==1){block=1;return 6}};if(p5==1){if(p6==1){block=1;return 4}};if(p4==1){if(p6==1){block=1;return 5}};
 if(p7==1){if(p8==1){block=1;return 9}};if(p8==1){if(p9==1){block=1;return 7}};if(p7==1){if(p9==1){block=1;return 8}};
+if(p1==1){if(p4==1){block=1;return 7}};if(p4==1){if(p7==1){block=1;return 1}};if(p1==1){if(p7==1){block=1;return 4}};
+if(p2==1){if(p5==1){block=1;return 8}};if(p5==1){if(p8==1){block=1;return 2}};if(p2==1){if(p8==1){block=1;return 5}};
+if(p3==1){if(p6==1){block=1;return 9}};if(p6==1){if(p9==1){block=1;return 3}};if(p3==1){if(p9==1){block=1;return 6}};
 if(block == 0){
 var randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
 if(randomnum == 1){if(p1 == 0){return 1}else{return 2}};
@@ -33,16 +36,12 @@ if(randomnum == 6){if(p6 == 0){return 6}else{return 7}};
 if(randomnum == 7){if(p7 == 0){return 7}else{return 8}};
 if(randomnum == 8){if(p8 == 0){return 8}else{return 9}};
 if(randomnum == 9){if(p9 == 0){return 9}else{return 1}};
-}else{
-
 }};
 var menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player\n3 How To Play');
-if(menu.indexOf('3')>-1){
-alert('-The board on the right with the numbers is a map of which numbers corrospond to locations on the board'
+if(menu.indexOf('3')>-1){alert('-The board on the right with the numbers is a map of which numbers corrospond to locations on the board'
 +'\n-Type the number that corrosponds with the move you wish to make and press enter or click "ok"'
 +'\n-A new pop-up box will show up displaying your move\n-If at any time you want to cancel, click cancel');
-menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player');
-};
+menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player')};
 if(menu.indexOf('1')>-1){
 var m1 = prompt('Tic-Tac-Toe\n    |   |      1|2|3\n    |   |      4|5|6\n    |   |      7|8|9');
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
