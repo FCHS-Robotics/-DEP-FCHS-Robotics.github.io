@@ -6,156 +6,87 @@
 //lots of changes
 //clearing unnecessary lines
 //converttostring-- gets locations and converts them to a string that will then be used in a prompt
-
+//shortening code
 //javascript:
 function converttostring(p1,p2,p3,p4,p5,p6,p7,p8,p9){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-if(p1 == 0){
-pos1 = ' '+' '+' ';
-}else{
-if(p1 == 1){
-pos1 = 'x ';
-}else{
-pos1 = 'o ';
-};
-};
-if(p2 == 0){
-pos2 = ' '+' '+' ';
-}else{
-if(p2 == 1){
-pos2 = 'x ';
-}else{
-pos2 = 'o ';
-};
-};
-if(p3 == 0){
-pos3 = ' '+' '+' ';
-}else{
-if(p3 == 1){
-pos3 = 'x ';
-}else{
-pos3 = 'o ';
-};
-};
-if(p4 == 0){
-pos4 = ' '+' '+' ';
-}else{
-if(p4 == 1){
-pos4 = 'x ';
-}else{
-pos4 = 'o ';
-};
-};
-if(p5 == 0){
-pos5 = ' '+' '+' ';
-}else{
-if(p5 == 1){
-pos5 = 'x ';
-}else{
-pos5 = 'o ';
-};
-};
-if(p6 == 0){
-pos6 = ' '+' '+' ';
-}else{
-if(p6 == 1){
-pos6 = 'x ';
-}else{
-pos6 = 'o ';
-};
-};
-if(p7 == 0){
-pos7 = ' '+' '+' ';
-}else{
-if(p7 == 1){
-pos7 = 'x ';
-}else{
-pos7 = 'o ';
-};
-};
-if(p8 == 0){
-pos8 = ' '+' '+' ';
-}else{
-if(p8 == 1){
-pos8 = 'x ';
-}else{
-pos8 = 'o ';
-};
-};
-if(p9 == 0){
-pos9 = ' '+' '+' ';
-}else{
-if(p9 == 1){
-pos9 = 'x ';
-}else{
-pos9 = 'o ';
-};
-};
-return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'
-};
-function aimove(first,p1,p2,p3,p4,p5,p6,p7,p8,p9){
+if(p1==0){pos1=' '+' '+' '}else{if(p1==1){pos1='x '}else{pos1='o '}};
+if(p2==0){pos2=' '+' '+' '}else{if(p2==1){pos2='x '}else{pos2='o '}};
+if(p3==0){pos3=' '+' '+' '}else{if(p3==1){pos3='x '}else{pos3='o '}};
+if(p4==0){pos4=' '+' '+' '}else{if(p4==1){pos4='x '}else{pos4='o '}};
+if(p5==0){pos5=' '+' '+' '}else{if(p5==1){pos5='x '}else{pos5='o '}};
+if(p6==0){pos6=' '+' '+' '}else{if(p6==1){pos6='x '}else{pos6='o '}};
+if(p7==0){pos7=' '+' '+' '}else{if(p7==1){pos7='x '}else{pos7='o '}};
+if(p8==0){pos8=' '+' '+' '}else{if(p8==1){pos8='x '}else{pos8='o '}};
+if(p9==0){pos9=' '+' '+' '}else{if(p9==1){pos9='x '}else{pos9='o '}};
+return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'};
+function aimove(p1,p2,p3,p4,p5,p6,p7,p8,p9){
+var block = 0;
+if(p1==1){if(p2==1){block=3}};if(p2==1){if(p3==1){block=1}};if(p1==1){if(p3==1){block=2}};
+if(p4==1){if(p5==1){block=6}};if(p5==1){if(p6==1){block=4}};if(p4==1){if(p6==1){block=5}};
+if(p7==1){if(p8==1){block=9}};if(p8==1){if(p9==1){block=7}};if(p7==1){if(p9==1){block=8}};
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-if(first == true){
+if(block == false){
 var randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
 if(randomnum == 1){
 if(p1 == 0){
-pos1 = 2
+pos1 = 2;
 }else{
-pos2 = 2
+pos2 = 2;
 };
 };
 if(randomnum == 2){
 if(p2 == 0){
-pos2 = 2
+pos2 = 2;
 }else{
-pos3= 2
+pos3 = 2;
 };
 };
 if(randomnum == 3){
 if(p3 == 0){
-pos4 = 2
+pos4 = 2;
 }else{
-pos4 = 2
+pos4 = 2;
 };
 };
 if(randomnum == 4){
 if(p4 == 0){
-pos4 = 2
+pos4 = 2;
 }else{
-pos5 = 2
+pos5 = 2;
 };
 };
 if(randomnum == 5){
 if(p5 == 0){
-pos5 = 2
+pos5 = 2;
 }else{
-pos6 = 2
+pos6 = 2;
 };
 };
 if(randomnum == 6){
 if(p6 == 0){
-pos6 = 2
+pos6 = 2;
 }else{
-pos7 = 2
+pos7 = 2;
 };
 };
 if(randomnum == 7){
 if(p7 == 0){
-pos7 = 2
+pos7 = 2;
 }else{
-pos8 = 2
+pos8 = 2;
 };
 };
 if(randomnum == 8){
 if(p8 == 0){
-pos8 = 2
+pos8 = 2;
 }else{
-pos9 = 2
+pos9 = 2;
 };
 };
 if(randomnum == 9){
 if(p9 == 0){
-pos9 = 2
+pos9 = 2;
 }else{
 pos1 = 2;
 };
@@ -165,7 +96,9 @@ pos1 = 2;
 };
 var menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player\n3 How To Play');
 if(menu.indexOf('3')>-1){
-alert('-The board on the right with the numbers is a map of which numbers corrospond to locations on the board\n-Type the number that corrosponds with the move you wish to make and press enter or click "ok"\n-A new pop-up box will show up displaying your move\n-If at any time you want to cancel, click cancel');
+alert('-The board on the right with the numbers is a map of which numbers corrospond to locations on the board'
++'\n-Type the number that corrosponds with the move you wish to make and press enter or click "ok"'
++'\n-A new pop-up box will show up displaying your move\n-If at any time you want to cancel, click cancel');
 menu = prompt('Tic-Tac-Toe\n\n1 One Player\n2 Two Player');
 };
 if(menu.indexOf('1')>-1){
