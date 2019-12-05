@@ -4,18 +4,20 @@
 <script>
 //converttostring-- gets locations and converts them to a string that will then be used in a prompt
 //shortening code
+//if there is a bug put it in a comment
+//if you need something explained, put it in a comment
 //javascript:
 function converttostring(p1,p2,p3,p4,p5,p6,p7,p8,p9){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;
-if(p1==0){pos1=' '+' '+' '}else{if(p1==1){pos1='x '}else{pos1='o '}};
-if(p2==0){pos2=' '+' '+' '}else{if(p2==1){pos2='x '}else{pos2='o '}};
-if(p3==0){pos3=' '+' '+' '}else{if(p3==1){pos3='x '}else{pos3='o '}};
-if(p4==0){pos4=' '+' '+' '}else{if(p4==1){pos4='x '}else{pos4='o '}};
-if(p5==0){pos5=' '+' '+' '}else{if(p5==1){pos5='x '}else{pos5='o '}};
-if(p6==0){pos6=' '+' '+' '}else{if(p6==1){pos6='x '}else{pos6='o '}};
-if(p7==0){pos7=' '+' '+' '}else{if(p7==1){pos7='x '}else{pos7='o '}};
-if(p8==0){pos8=' '+' '+' '}else{if(p8==1){pos8='x '}else{pos8='o '}};
-if(p9==0){pos9=' '+' '+' '}else{if(p9==1){pos9='x '}else{pos9='o '}};
+if(p1==0){pos1=' '+' '}else{if(p1==1){pos1='x'}else{pos1='o'}};
+if(p2==0){pos2=' '+' '}else{if(p2==1){pos2='x'}else{pos2='o'}};
+if(p3==0){pos3=' '+' '}else{if(p3==1){pos3='x'}else{pos3='o'}};
+if(p4==0){pos4=' '+' '}else{if(p4==1){pos4='x'}else{pos4='o'}};
+if(p5==0){pos5=' '+' '}else{if(p5==1){pos5='x'}else{pos5='o'}};
+if(p6==0){pos6=' '+' '}else{if(p6==1){pos6='x'}else{pos6='o'}};
+if(p7==0){pos7=' '+' '}else{if(p7==1){pos7='x'}else{pos7='o'}};
+if(p8==0){pos8=' '+' '}else{if(p8==1){pos8='x'}else{pos8='o'}};
+if(p9==0){pos9=' '+' '}else{if(p9==1){pos9='x'}else{pos9='o'}};
 return 'Tic-Tac-Toe\n'+pos1+'|'+pos2+'|'+pos3+'  1|2|3\n'+pos4+'|'+pos5+'|'+pos6+'  4|5|6\n'+pos7+'|'+pos8+'|'+pos9+'  7|8|9'};
 function aimove(p1,p2,p3,p4,p5,p6,p7,p8,p9){
 var block = 0;
@@ -25,6 +27,8 @@ if(p7==1){if(p8==1){block=1;return 9}};if(p8==1){if(p9==1){block=1;return 7}};if
 if(p1==1){if(p4==1){block=1;return 7}};if(p4==1){if(p7==1){block=1;return 1}};if(p1==1){if(p7==1){block=1;return 4}};
 if(p2==1){if(p5==1){block=1;return 8}};if(p5==1){if(p8==1){block=1;return 2}};if(p2==1){if(p8==1){block=1;return 5}};
 if(p3==1){if(p6==1){block=1;return 9}};if(p6==1){if(p9==1){block=1;return 3}};if(p3==1){if(p9==1){block=1;return 6}};
+if(p1==1){if(p5==1){block=1;return 9}};if(p5==1){if(p9==1){block=1;return 1}};
+if(p3==1){if(p5==1){block=1;return 7}};if(p5==1){if(p7==1){block=1;return 3}};
 if(block == 0){
 var randomnum = Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
 if(randomnum == 1){if(p1 == 0){return 1}else{return 2}};
