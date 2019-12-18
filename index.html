@@ -2,18 +2,27 @@
 <html>
 <body>
 <script>
-document.body.innerHTML='';
-document.write('Checkers\n\n'+' '+' '+' '+' '+' | '+' | '+' | '+' | '+' | '+' | '+' | '.fontsize(6));
-
-
-
-
-
-
-
-
-
-
+var start=prompt('2 Player Checkers\n\n1. Play\n2. How To Play');
+if(start.indexOf('2')==0){
+alert('-');
+start=prompt('2 Player Checkers\n\n1. Play');
+};
+if(start.indexOf('1')==0){
+var turn=1;
+var board=prompt('Checkers\nPlayer One\'s Turn\n 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 \n ♖ | ♖ | ♖ | ♕ | ♛ | ♜ | ♕ | ♖ \n   |   |   |   |   |   |   |   ');
+};
+// ♖ 
+// ♕ 
+// ♜ 
+// ♛ 
+// 1 
+// 2 
+// 3 
+// 4 
+// 5 
+// 6 
+// 7 
+// 8 
 </script>
 </body>
 </html>
