@@ -24,10 +24,10 @@ start=prompt('2 Player Checkers\n\n1. Play');
 };
 if(start.indexOf('1')==0){
 var turn=1;
-do{var board=prompt('Checkers\nPlayer One\'s Turn\n    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 \n1   | ♖ |   | ♖ |   | ♖ |   | ♖ '+
-' \n2 ♖ |   | ♖ |   | ♖ |   | ♖ |   \n3   | ♖ |   | ♖ |   | ♖ |   | ♖ \n4   |   |   |   |   |   |   |   '+
+do{var board=prompt('Checkers\nPlayer One\'s Turn\n    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 \n1 ♖ |   | ♖ |   | ♖ |   | ♖ |   '+
+' \n2    |♖ |   | ♖ |   | ♖ |   | ♖ \n3 ♖ |   | ♖ |   | ♖ |   | ♖ |   \n4   |   |   |   |   |   |   |   '+
 '\n5   |   |   |   |   |   |   |   \n6 ♜ |   | ♜ |   | ♜ |   | ♜ |   '+
-'\n7   | ♜ |   | ♜ |   | ♜ |   | ♜ \n8 ♜ |   | ♜ |   | ♜ |   | ♜ |   ');
+'\n7 ♜ |   | ♜ |   | ♜ |   | ♜ |   \n8    |♜ |   | ♜ |   | ♜ |   | ♜ ');
 }while(board.indexOf('11 to 11')==-1);};
 //0 = nothing, 1 = white piece, 2 = black piece, 3 = white king, 4 = black king
 // ♖ 
