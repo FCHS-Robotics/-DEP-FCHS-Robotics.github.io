@@ -5,9 +5,10 @@
 /*
 updates:
 reorganized pieces
-created how to play
-
+created how to play menu
+created "updates" section in the script
 */
+//javascript:
 function returnpos(piece,pos,p1,p2,p3,p4,p5,p6,
 p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
 
@@ -30,7 +31,7 @@ return 'Checkers\nPlayer '+playerturn+' Turn\n    1 | 2 | 3 | 4�
 var start=prompt('2 Player Checkers\n\n1. Play\n2. How To Play');
 if(start.indexOf('2')==0){
 alert('-When  moving pieces, you start with the position you want to move from. Start with the top number, '+
-'then use the bottom number after. Then, type \'to,\'then position you want to go. Example: 23 to 14'+
+'then use the bottom number after. Then type "to," then position you want to go. \n-Example: 23 to 14'+
 '\n-Click cancel to quit the game.');
 start=prompt('2 Player Checkers\n\n1. Play');
 };
