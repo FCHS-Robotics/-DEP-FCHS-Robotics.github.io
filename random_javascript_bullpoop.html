@@ -29,7 +29,9 @@ return 'Checkers\nPlayer '+playerturn+' Turn\n    1 | 2 | 3 | 4�
 };
 var start=prompt('2 Player Checkers\n\n1. Play\n2. How To Play');
 if(start.indexOf('2')==0){
-alert('-When  moving pieces, you start with the position you want to move from. Start with the top number, then use the bottom number after. Then, type \'to,\'then position you want to go. Example: 23 to 14\n-Click cancel to quit the game.');
+alert('-When  moving pieces, you start with the position you want to move from. Start with the top number, '+
+'then use the bottom number after. Then, type \'to,\'then position you want to go. Example: 23 to 14'+
+'\n-Click cancel to quit the game.');
 start=prompt('2 Player Checkers\n\n1. Play');
 };
 if(start.indexOf('1')==0){
