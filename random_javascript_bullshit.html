@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+/*
+updates:
+reorganized pieces
+created how to play menu
+created "updates" section in the script
+*/
+//javascript:
+function returnpos(piece,pos,p1,p2,p3,p4,p5,p6,
+p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
+
+};
+function tostring(turn,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,
+p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
+var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,
+pos20,pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32,playerturn;
+if(turn==1){playerturn='One\'s'}else{playerturn='Two\'s'};
+if(p1==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p2==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p3==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p4==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p5==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p6==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p7==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p8==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p9==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p10==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p11==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p12==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p13==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p14==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p15==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p16==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p17==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p18==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p19==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p20==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p21==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p22==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p23==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p24==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p25==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p26==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p27==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p28==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p29==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p30==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p31==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p32==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+
+return 'Checkers\nPlayer '+playerturn+' Turn\n    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 '+
+'\n1   |'+pos1+'|   |'+pos2+'|   |'+pos3+'|   |'+pos4+' \n2'+pos5+'|   |'+pos6+'|   |'+pos7+'|   |'+pos8+'|   '+
+'\n3   |'+pos9+'|   |'+pos10+'|   |'+pos11+'|   |'+pos12+'\n4'+pos13+'|   |'+pos14+'|   |'+pos15+'|   |'+pos16+'|   '+
+'\n5   |'+pos17+'|   |'+pos18+'|   |'+pos19+'|   |'+pos20+'\n6'+pos21+'|   |'+pos22+'|   |'+pos23+'|   |'+pos24+'|   '+
+'\n7   |'+pos25+'|   |'+pos26+'|   |'+pos27+'|   |'+pos28+'\n8'+pos29+'|   |'+pos30+'|   |'+pos31+'|   |'+pos32+'|   '
+};
+var start=prompt('2 Player Checkers\n\n1. Play\n2. How To Play');
+if(start.indexOf('2')==0){
+alert('-When  moving pieces, you start with the position you want to move from. Start with the top number, '+
+'then use the bottom number after. Then type "to," then position you want to go. \n-Example: 23 to 14'+
+'\n-Click cancel to quit the game.');
+start=prompt('2 Player Checkers\n\n1. Play');
+};
+if(start.indexOf('1')==0){
+var turn=1;
+do{var board=prompt('Checkers\nPlayer One\'s Turn\n    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 \n1   | ♖ |   | ♖ |   | ♖ |   | ♖ '+
+' \n2 ♖ |   | ♖ |   | ♖ |   | ♖ |   \n3   | ♖ |   | ♖ |   | ♖ |   | ♖ \n4   |   |   |   |   |   |   |   '+
+'\n5   |   |   |   |   |   |   |   \n6 ♜ |   | ♜ |   | ♜ |   | ♜ |   '+
+'\n7   | ♜ |   | ♜ |   | ♜ |   | ♜ \n8 ♜ |   | ♜ |   | ♜ |   | ♜ |   ');
+}while(board.indexOf('11 to 11')==-1);};
+//0 = nothing, 1 = white piece, 2 = black piece, 3 = white king, 4 = black king
+// ♖ 
+// ♕ 
+// ♜ 
+// ♛ 
+// 1 
+// 2 
+// 3 
+// 4 
+// 5 
+// 6 
+// 7 
+// 8 
+//   
+</script>
+</body>
+</html>
