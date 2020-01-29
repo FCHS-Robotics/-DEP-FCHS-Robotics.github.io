@@ -10,9 +10,10 @@ created how to play menu
 created "updates" section in the script
 */
 //javascript:
-function returnpos(piece,pos,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,
+function returnpos(string,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,
 p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
-
+if(string.indexOf('21')==){
+}
 };
 function tostring(turn,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,
 p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
@@ -70,6 +71,14 @@ var turn=1;
 do{prompt(tostring(1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2))
 }while(board.indexOf('11 to 11')==-1);};
 //0 = nothing, 1 = white piece, 2 = black piece, 3 = white king, 4 = black king
+//21 41 61 81 
+//12 32 52 72
+//23 43 63 83
+//14 34 54 74
+//25 45 65 85
+//16 36 56 76
+//27 47 67 87
+//18 38 58 78
 // ♖ 
 // ♕ 
 // ♜ 
