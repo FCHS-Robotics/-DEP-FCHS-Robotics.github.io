@@ -4,13 +4,14 @@
 <script>
 /*
 updates:
+created tostring algorithim
 reorganized pieces
 created how to play menu
 created "updates" section in the script
 */
 //javascript:
-function returnpos(piece,pos,p1,p2,p3,p4,p5,p6,
-p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
+function returnpos(piece,pos,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,
+p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
 
 };
 function tostring(turn,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,
@@ -19,37 +20,37 @@ var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,p
 pos20,pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32,playerturn;
 if(turn==1){playerturn='One\'s'}else{playerturn='Two\'s'};
 if(p1==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p2==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p3==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p4==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p5==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p6==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p7==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p8==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p9==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p10==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p11==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p12==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p13==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p14==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p15==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p16==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p17==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p18==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p19==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p20==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p21==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p22==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p23==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p24==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p25==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p26==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p27==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p28==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p29==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p30==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p31==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
-if(p32==0){pos1='   '}else if(p1==1){pos1=' ♖ '}else if(p1==2){pos1=' ♜ '}else if(p1==3){pos1=' ♕ '}else{pos1=' ♛ '};
+if(p2==0){pos2='   '}else if(p2==1){pos2=' ♖ '}else if(p2==2){pos2=' ♜ '}else if(p2==3){pos2=' ♕ '}else{pos2=' ♛ '};
+if(p3==0){pos3='   '}else if(p3==1){pos3=' ♖ '}else if(p3==2){pos3=' ♜ '}else if(p3==3){pos3=' ♕ '}else{pos3=' ♛ '};
+if(p4==0){pos4='   '}else if(p4==1){pos4=' ♖ '}else if(p4==2){pos4=' ♜ '}else if(p4==3){pos4=' ♕ '}else{pos4=' ♛ '};
+if(p5==0){pos5='   '}else if(p5==1){pos5=' ♖ '}else if(p5==2){pos5=' ♜ '}else if(p5==3){pos5=' ♕ '}else{pos5=' ♛ '};
+if(p6==0){pos6='   '}else if(p6==1){pos6=' ♖ '}else if(p6==2){pos6=' ♜ '}else if(p6==3){pos6=' ♕ '}else{pos6=' ♛ '};
+if(p7==0){pos7='   '}else if(p7==1){pos7=' ♖ '}else if(p7==2){pos7=' ♜ '}else if(p7==3){pos7=' ♕ '}else{pos7=' ♛ '};
+if(p8==0){pos8='   '}else if(p8==1){pos8=' ♖ '}else if(p8==2){pos8=' ♜ '}else if(p8==3){pos8=' ♕ '}else{pos8=' ♛ '};
+if(p9==0){pos9='   '}else if(p9==1){pos9=' ♖ '}else if(p9==2){pos9=' ♜ '}else if(p9==3){pos9=' ♕ '}else{pos9=' ♛ '};
+if(p10==0){pos10='   '}else if(p10==1){pos10=' ♖ '}else if(p10==2){pos10=' ♜ '}else if(p10==3){pos10=' ♕ '}else{pos10=' ♛ '};
+if(p11==0){pos11='   '}else if(p11==1){pos11=' ♖ '}else if(p11==2){pos11=' ♜ '}else if(p11==3){pos11=' ♕ '}else{pos11=' ♛ '};
+if(p12==0){pos12='   '}else if(p12==1){pos12=' ♖ '}else if(p12==2){pos12=' ♜ '}else if(p12==3){pos12=' ♕ '}else{pos12=' ♛ '};
+if(p13==0){pos13='   '}else if(p13==1){pos13=' ♖ '}else if(p13==2){pos13=' ♜ '}else if(p13==3){pos13=' ♕ '}else{pos13=' ♛ '};
+if(p14==0){pos14='   '}else if(p14==1){pos14=' ♖ '}else if(p14==2){pos14=' ♜ '}else if(p14==3){pos14=' ♕ '}else{pos14=' ♛ '};
+if(p15==0){pos15='   '}else if(p15==1){pos15=' ♖ '}else if(p15==2){pos15=' ♜ '}else if(p15==3){pos15=' ♕ '}else{pos15=' ♛ '};
+if(p16==0){pos16='   '}else if(p16==1){pos16=' ♖ '}else if(p16==2){pos16=' ♜ '}else if(p16==3){pos16=' ♕ '}else{pos16=' ♛ '};
+if(p17==0){pos17='   '}else if(p17==1){pos17=' ♖ '}else if(p17==2){pos17=' ♜ '}else if(p17==3){pos17=' ♕ '}else{pos17=' ♛ '};
+if(p18==0){pos18='   '}else if(p18==1){pos18=' ♖ '}else if(p18==2){pos18=' ♜ '}else if(p18==3){pos18=' ♕ '}else{pos18=' ♛ '};
+if(p19==0){pos19='   '}else if(p19==1){pos19=' ♖ '}else if(p19==2){pos19=' ♜ '}else if(p19==3){pos19=' ♕ '}else{pos19=' ♛ '};
+if(p20==0){pos20='   '}else if(p20==1){pos20=' ♖ '}else if(p20==2){pos20=' ♜ '}else if(p20==3){pos20=' ♕ '}else{pos20=' ♛ '};
+if(p21==0){pos21='   '}else if(p21==1){pos21=' ♖ '}else if(p21==2){pos21=' ♜ '}else if(p21==3){pos21=' ♕ '}else{pos21=' ♛ '};
+if(p22==0){pos22='   '}else if(p22==1){pos22=' ♖ '}else if(p22==2){pos22=' ♜ '}else if(p22==3){pos22=' ♕ '}else{pos22=' ♛ '};
+if(p23==0){pos23='   '}else if(p23==1){pos23=' ♖ '}else if(p23==2){pos23=' ♜ '}else if(p23==3){pos23=' ♕ '}else{pos23=' ♛ '};
+if(p24==0){pos24='   '}else if(p24==1){pos24=' ♖ '}else if(p24==2){pos24=' ♜ '}else if(p24==3){pos24=' ♕ '}else{pos24=' ♛ '};
+if(p25==0){pos25='   '}else if(p25==1){pos25=' ♖ '}else if(p25==2){pos25=' ♜ '}else if(p25==3){pos25=' ♕ '}else{pos25=' ♛ '};
+if(p26==0){pos26='   '}else if(p26==1){pos26=' ♖ '}else if(p26==2){pos26=' ♜ '}else if(p26==3){pos26=' ♕ '}else{pos26=' ♛ '};
+if(p27==0){pos27='   '}else if(p27==1){pos27=' ♖ '}else if(p27==2){pos27=' ♜ '}else if(p27==3){pos27=' ♕ '}else{pos27=' ♛ '};
+if(p28==0){pos28='   '}else if(p28==1){pos28=' ♖ '}else if(p28==2){pos28=' ♜ '}else if(p28==3){pos28=' ♕ '}else{pos28=' ♛ '};
+if(p29==0){pos29='   '}else if(p29==1){pos29=' ♖ '}else if(p29==2){pos29=' ♜ '}else if(p29==3){pos29=' ♕ '}else{pos29=' ♛ '};
+if(p30==0){pos30='   '}else if(p30==1){pos30=' ♖ '}else if(p30==2){pos30=' ♜ '}else if(p30==3){pos30=' ♕ '}else{pos30=' ♛ '};
+if(p31==0){pos31='   '}else if(p31==1){pos31=' ♖ '}else if(p31==2){pos31=' ♜ '}else if(p31==3){pos31=' ♕ '}else{pos31=' ♛ '};
+if(p32==0){pos32='   '}else if(p32==1){pos32=' ♖ '}else if(p32==2){pos32=' ♜ '}else if(p32==3){pos32=' ♕ '}else{pos32=' ♛ '};
 
 return 'Checkers\nPlayer '+playerturn+' Turn\n    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 '+
 '\n1   |'+pos1+'|   |'+pos2+'|   |'+pos3+'|   |'+pos4+' \n2'+pos5+'|   |'+pos6+'|   |'+pos7+'|   |'+pos8+'|   '+
@@ -66,10 +67,7 @@ start=prompt('2 Player Checkers\n\n1. Play');
 };
 if(start.indexOf('1')==0){
 var turn=1;
-do{var board=prompt('Checkers\nPlayer One\'s Turn\n    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 \n1   | ♖ |   | ♖ |   | ♖ |   | ♖ '+
-' \n2 ♖ |   | ♖ |   | ♖ |   | ♖ |   \n3   | ♖ |   | ♖ |   | ♖ |   | ♖ \n4   |   |   |   |   |   |   |   '+
-'\n5   |   |   |   |   |   |   |   \n6 ♜ |   | ♜ |   | ♜ |   | ♜ |   '+
-'\n7   | ♜ |   | ♜ |   | ♜ |   | ♜ \n8 ♜ |   | ♜ |   | ♜ |   | ♜ |   ');
+do{prompt(tostring(1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2))
 }while(board.indexOf('11 to 11')==-1);};
 //0 = nothing, 1 = white piece, 2 = black piece, 3 = white king, 4 = black king
 // ♖ 
