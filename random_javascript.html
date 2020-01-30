@@ -4,6 +4,7 @@
 <script>
 /*
 updates:
+shortened code
 started return pos algorithim
 created tostring algorithim
 reorganized pieces
@@ -13,42 +14,46 @@ created "updates" section in the script
 //javascript:
 function returnpos(string,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,
 p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
-var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,
-pos20,pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32,piece,pos;
+var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,pos20,
+pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32,piece,move,takenpiece,piecex,piecey,movex,movey;
 if(string.indexOf(' to ')!=2){return false};
-if(string.indexOf('21')==0){if(p1==1||p1==2||p1==3||p1==4){piece=p1}else{return false}};
-if(string.indexOf('41')==0){if(p2==1||p2==2||p2==3||p2==4){piece=p2}else{return false}};
-if(string.indexOf('61')==0){if(p3==1||p3==2||p3==3||p3==4){piece=p3}else{return false}};
-if(string.indexOf('81')==0){if(p4==1||p4==2||p4==3||p4==4){piece=p4}else{return false}};
-if(string.indexOf('12')==0){if(p5==1||p5==2||p5==3||p5==4){piece=p5}else{return false}};
-if(string.indexOf('32')==0){if(p6==1||p6==2||p6==3||p6==4){piece=p6}else{return false}};
-if(string.indexOf('52')==0){if(p7==1||p7==2||p7==3||p7==4){piece=p7}else{return false}};
-if(string.indexOf('72')==0){if(p8==1||p8==2||p8==3||p8==4){piece=p8}else{return false}};
-if(string.indexOf('23')==0){if(p9==1||p9==2||p9==3||p9==4){piece=p9}else{return false}};
-if(string.indexOf('43')==0){if(p10==1||p10==2||p10==3||p10==4){piece=p10}else{return false}};
-if(string.indexOf('63')==0){if(p11==1||p11==2||p11==3||p11==4){piece=p11}else{return false}};
-if(string.indexOf('83')==0){if(p12==1||p12==2||p12==3||p12==4){piece=p12}else{return false}};
-if(string.indexOf('14')==0){if(p13==1||p13==2||p13==3||p13==4){piece=p13}else{return false}};
-if(string.indexOf('34')==0){if(p14==1||p14==2||p14==3||p14==4){piece=p14}else{return false}};
-if(string.indexOf('54')==0){if(p15==1||p15==2||p15==3||p15==4){piece=p15}else{return false}};
-if(string.indexOf('74')==0){if(p16==1||p16==2||p16==3||p16==4){piece=p16}else{return false}};
-if(string.indexOf('25')==0){if(p17==1||p17==2||p17==3||p17==4){piece=p17}else{return false}};
-if(string.indexOf('45')==0){if(p18==1||p18==2||p18==3||p18==4){piece=p18}else{return false}};
-if(string.indexOf('65')==0){if(p19==1||p19==2||p19==3||p19==4){piece=p19}else{return false}};
-if(string.indexOf('85')==0){if(p20==1||p20==2||p20==3||p20==4){piece=p20}else{return false}};
-if(string.indexOf('16')==0){if(p21==1||p21==2||p21==3||p21==4){piece=p21}else{return false}};
-if(string.indexOf('36')==0){if(p22==1||p22==2||p22==3||p22==4){piece=p22}else{return false}};
-if(string.indexOf('56')==0){if(p23==1||p23==2||p23==3||p23==4){piece=p23}else{return false}};
-if(string.indexOf('76')==0){if(p24==1||p24==2||p24==3||p24==4){piece=p24}else{return false}};
-if(string.indexOf('27')==0){if(p25==1||p25==2||p25==3||p25==4){piece=p25}else{return false}};
-if(string.indexOf('47')==0){if(p26==1||p26==2||p26==3||p26==4){piece=p26}else{return false}};
-if(string.indexOf('67')==0){if(p27==1||p27==2||p27==3||p27==4){piece=p27}else{return false}};
-if(string.indexOf('87')==0){if(p28==1||p28==2||p28==3||p28==4){piece=p28}else{return false}};
-if(string.indexOf('18')==0){if(p29==1||p29==2||p29==3||p29==4){piece=p29}else{return false}};
-if(string.indexOf('38')==0){if(p30==1||p30==2||p30==3||p30==4){piece=p30}else{return false}};
-if(string.indexOf('58')==0){if(p31==1||p31==2||p31==3||p31==4){piece=p31}else{return false}};
-if(string.indexOf('78')==0){if(p32==1||p32==2||p32==3||p32==4){piece=p32}else{return false}};
+if(string.indexOf('21')==0){if(p1!=0){piece=p1;piecey=2;piecex=1}else{return false}};
+if(string.indexOf('41')==0){if(p2!=0){piece=p2;piecey=4;piecex=1}else{return false}};
+if(string.indexOf('61')==0){if(p3!=0){piece=p3;piecey=6;piecex=1}else{return false}};
+if(string.indexOf('81')==0){if(p4!=0){piece=p4;piecey=8;piecex=1}else{return false}};
+if(string.indexOf('12')==0){if(p5!=0){piece=p5;piecey=1;piecex=2}else{return false}};
+if(string.indexOf('32')==0){if(p6!=0){piece=p6;piecey=3;piecex=2}else{return false}};
+if(string.indexOf('52')==0){if(p7!=0){piece=p7;piecey=5;piecex=2}else{return false}};
+if(string.indexOf('72')==0){if(p8!=0){piece=p8;piecey=7;piecex=2}else{return false}};
+if(string.indexOf('23')==0){if(p9!=0){piece=p9;piecey=2;piecex=3}else{return false}};
+if(string.indexOf('43')==0){if(p10!=0){piece=p10;piecey=4;piecex=3}else{return false}};
+if(string.indexOf('63')==0){if(p11!=0){piece=p11;piecey=6;piecex=3}else{return false}};
+if(string.indexOf('83')==0){if(p12!=0){piece=p12;piecey=8;piecex=3}else{return false}};
+if(string.indexOf('14')==0){if(p13!=0){piece=p13;piecey=1;piecex=4}else{return false}};
+if(string.indexOf('34')==0){if(p14!=0){piece=p14;piecey=3;piecex=4}else{return false}};
+if(string.indexOf('54')==0){if(p15!=0){piece=p15;piecey=5;piecex=4}else{return false}};
+if(string.indexOf('74')==0){if(p16!=0){piece=p16;piecey=7;piecex=4}else{return false}};
+if(string.indexOf('25')==0){if(p17!=0){piece=p17;piecey=2;piecex=5}else{return false}};
+if(string.indexOf('45')==0){if(p18!=0){piece=p18;piecey=4;piecex=5}else{return false}};
+if(string.indexOf('65')==0){if(p19!=0){piece=p19;piecey=6;piecex=5}else{return false}};
+if(string.indexOf('85')==0){if(p20!=0){piece=p20;piecey=8;piecex=5}else{return false}};
+if(string.indexOf('16')==0){if(p21!=0){piece=p21;piecey=1;piecex=6}else{return false}};
+if(string.indexOf('36')==0){if(p22!=0){piece=p22;piecey=3;piecex=6}else{return false}};
+if(string.indexOf('56')==0){if(p23!=0){piece=p23;piecey=5;piecex=6}else{return false}};
+if(string.indexOf('76')==0){if(p24!=0){piece=p24;piecey=7;piecex=6}else{return false}};
+if(string.indexOf('27')==0){if(p25!=0){piece=p25;piecey=2;piecex=7}else{return false}};
+if(string.indexOf('47')==0){if(p26!=0){piece=p26;piecey=4;piecex=7}else{return false}};
+if(string.indexOf('67')==0){if(p27!=0){piece=p27;piecey=6;piecex=7}else{return false}};
+if(string.indexOf('87')==0){if(p28!=0){piece=p28;piecey=8;piecex=7}else{return false}};
+if(string.indexOf('18')==0){if(p29!=0){piece=p29;piecey=1;piecex=8}else{return false}};
+if(string.indexOf('38')==0){if(p30!=0){piece=p30;piecey=3;piecex=8}else{return false}};
+if(string.indexOf('58')==0){if(p31!=0){piece=p31;piecey=5;piecex=8}else{return false}};
+if(string.indexOf('78')==0){if(p32!=0){piece=p32;piecey=7;piecex=8}else{return false}};
+if(string.indexOf('21')==6){if(p1==0){movey=2;movex=1}else{return false}};
 
+
+
+if(movey<=piecey&&piece==1||movey>=piecey&&piece==2){return false};
 };
 /*
 end of returnpos
