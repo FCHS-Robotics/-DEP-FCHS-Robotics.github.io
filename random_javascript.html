@@ -5,6 +5,7 @@
 /*
 updates:
 
+added settings
 shortened code
 major bugs are back for some reason
 fixed major bugs
@@ -103,7 +104,7 @@ p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,computer){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,
 pos20,pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32,playerturn;
 if(turn==1){playerturn='One\'s'}else{playerturn='Two\'s'};
-var s,w=' ♖ ',b=' ♜ ',wq=' ♕ ',bq=' ♛ ';
+var s='   ',w=' ♖ ',b=' ♜ ',wq=' ♕ ',bq=' ♛ ';
 if(computer==0){s='   '}else if(computer==1){s='  '}
 if(p1==0){pos1=s}else if(p1==1){pos1=w}else if(p1==2){pos1=b}else if(p1==3){pos1=wq}else{pos1=bq};
 if(p2==0){pos2=s}else if(p2==1){pos2=w}else if(p2==2){pos2=b}else if(p2==3){pos2=wq}else{pos2=bq};
@@ -151,18 +152,19 @@ end of tostring
 end of tostring
 end of tostring
 */
-
-var start=prompt('2 Player Checkers\n\n1. Play\n2. How To Play\n3. Settings');
-if(start.indexOf('2')==0){
-alert('-When  moving pieces, you start with the position you want to move from. Start with the top number, '+
+var spacing;
+do{var start=prompt('2 Player Checkers\n\n1. Play\n2. How To Play\n3. Settings');
+if(start.indexOf('3')==0){var setting=prompt('Settings\n\nType Of Computer\n1. School Chromebook 2. Other (may effect spacing)'
+);
+if(setting.indexOf('1')==0){spacing=0};if(setting.indexOf('2')==1){spacing=1}}
+if(start.indexOf('2')==0){alert(
+'How To Play\n-When  moving pieces, you start with the position you want to move from. Start with the top number, '+
 'then use the bottom number after. Then type "to," then position you want to go. \n-Example: 23 to 14'+
 '\n-Click cancel to quit the game.');
-start=prompt('2 Player Checkers\n\n1. Play');
 };
-if(start.indexOf('1')==0){
-var turn=1;
-do{var board=prompt(tostring(1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2))
-}while(returnpos(board,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2)==false);};
+if(start.indexOf('1')==0){var turn=1;
+do{var board=prompt(tostring(1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,spacing))
+}while(returnpos(board,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2)==false);}}while(start.indexOf('1')!=1);
 
 
 
