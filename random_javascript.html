@@ -5,6 +5,7 @@
 /*
 updates:
 
+major bugs are back for some reason
 fixed major bugs
 shortened code
 started returnpos algorithim
@@ -16,8 +17,8 @@ created "updates" section in the script
 //javascript:
 function returnpos(string,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,
 p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32){
-var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,pos20,
-pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32,piece,move,takenpiece,piecex,piecey,movex,movey;
+var board=[pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,pos20,
+pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32];var piece,takenpiece,piecex,piecey,movex,movey;
 if(string.indexOf(' to ')!=2){return false};
 if(string.indexOf('21')==0){if(p1!=0){piece=p1;piecey=2;piecex=1}else{return false}};
 if(string.indexOf('41')==0){if(p2!=0){piece=p2;piecey=4;piecex=1}else{return false}};
@@ -83,12 +84,10 @@ if(string.lastIndexOf('18')==6){if(p29==0){movey=8;movex=2}else{return false}};
 if(string.lastIndexOf('38')==6){if(p30==0){movey=8;movex=4}else{return false}};
 if(string.lastIndexOf('58')==6){if(p31==0){movey=8;movex=6}else{return false}};
 if(string.lastIndexOf('78')==6){if(p32==0){movey=8;movex=8}else{return false}};
-if(){
+if((piecey+1==movey&&((piecex+1==movex)||(piecex-1==movex)))&&piece==1){return board;}else{return false};
+if((piecey+1==movey&&((piecex+1==movex)||(piecex-1==movex)))&&piece==2){return board;}else{return false};
 
-
-};
-
-if(movey<=piecey&&piece==1||movey>=piecey&&piece==2){return false};
+if((movey<=piecey&&piece==1)||(movey>=piecey&&piece==2)){return false};
 };
 /*
 end of returnpos
