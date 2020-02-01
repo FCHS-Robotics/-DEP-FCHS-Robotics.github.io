@@ -5,6 +5,7 @@
 /*
 updates:
 
+even more major bugs have appeared
 added settings
 shortened code
 major bugs are back for some reason
@@ -86,10 +87,11 @@ if(string.lastIndexOf('18')==6){if(p29==0){movey=8;movex=2}else{return false}};
 if(string.lastIndexOf('38')==6){if(p30==0){movey=8;movex=4}else{return false}};
 if(string.lastIndexOf('58')==6){if(p31==0){movey=8;movex=6}else{return false}};
 if(string.lastIndexOf('78')==6){if(p32==0){movey=8;movex=8}else{return false}};
+if((movey<=piecey&&piece==1)||(movey>=piecey&&piece==2)){return false};
 if((piecey+1==movey&&((piecex+1==movex)||(piecex-1==movex)))&&piece==1){return board;}else{return false};
 if((piecey+1==movey&&((piecex+1==movex)||(piecex-1==movex)))&&piece==2){return board;}else{return false};
 
-if((movey<=piecey&&piece==1)||(movey>=piecey&&piece==2)){return false};
+
 };
 /*
 end of returnpos
@@ -104,8 +106,8 @@ p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,computer){
 var pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,
 pos20,pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30,pos31,pos32,playerturn;
 if(turn==1){playerturn='One\'s'}else{playerturn='Two\'s'};
-var s='   ',w=' ♖ ',b=' ♜ ',wq=' ♕ ',bq=' ♛ ';
-if(computer==0){s='   '}else if(computer==1){s='  '}
+var s='   ',w=' ♖ ',b=' ♜ ',wq=' ♕ ',bq=' ♛ ';
+if(computer==0){s='   '}else if(computer==1){s='  '}
 if(p1==0){pos1=s}else if(p1==1){pos1=w}else if(p1==2){pos1=b}else if(p1==3){pos1=wq}else{pos1=bq};
 if(p2==0){pos2=s}else if(p2==1){pos2=w}else if(p2==2){pos2=b}else if(p2==3){pos2=wq}else{pos2=bq};
 if(p3==0){pos3=s}else if(p3==1){pos3=w}else if(p3==2){pos3=b}else if(p3==3){pos3=wq}else{pos3=bq};
@@ -139,10 +141,10 @@ if(p30==0){pos30=s}else if(p30==1){pos30=w}else if(p30==2){pos30=b}else if(p30==
 if(p31==0){pos31=s}else if(p31==1){pos31=w}else if(p31==2){pos31=b}else if(p31==3){pos31=wq}else{pos31=bq};
 if(p32==0){pos32=s}else if(p32==1){pos32=w}else if(p32==2){pos32=b}else if(p32==3){pos32=wq}else{pos32=bq};
 return 'Checkers\nPlayer '+playerturn+' Turn\n    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 '+
-'\n1   |'+pos1+'|   |'+pos2+'|   |'+pos3+'|   |'+pos4+' \n2'+pos5+'|   |'+pos6+'|   |'+pos7+'|   |'+pos8+'|   '+
-'\n3   |'+pos9+'|   |'+pos10+'|   |'+pos11+'|   |'+pos12+'\n4'+pos13+'|   |'+pos14+'|   |'+pos15+'|   |'+pos16+'|   '+
-'\n5   |'+pos17+'|   |'+pos18+'|   |'+pos19+'|   |'+pos20+'\n6'+pos21+'|   |'+pos22+'|   |'+pos23+'|   |'+pos24+'|   '+
-'\n7   |'+pos25+'|   |'+pos26+'|   |'+pos27+'|   |'+pos28+'\n8'+pos29+'|   |'+pos30+'|   |'+pos31+'|   |'+pos32+'|   '
+'\n1   |'+pos1+'|   |'+pos2+'|   |'+pos3+'|   |'+pos4+' \n2'+pos5+'|   |'+pos6+'|   |'+pos7+'|   |'+pos8+'|   '+
+'\n3   |'+pos9+'|   |'+pos10+'|   |'+pos11+'|   |'+pos12+'\n4'+pos13+'|   |'+pos14+'|   |'+pos15+'|   |'+pos16+'|   '+
+'\n5   |'+pos17+'|   |'+pos18+'|   |'+pos19+'|   |'+pos20+'\n6'+pos21+'|   |'+pos22+'|   |'+pos23+'|   |'+pos24+'|   '+
+'\n7   |'+pos25+'|   |'+pos26+'|   |'+pos27+'|   |'+pos28+'\n8'+pos29+'|   |'+pos30+'|   |'+pos31+'|   |'+pos32+'|   '
 };
 /*
 end of tostring
@@ -193,7 +195,7 @@ do{var board=prompt(tostring(1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2
 // 6 
 // 7 
 // 8 
-//   
+//   
 </script>
 </body>
 </html>
