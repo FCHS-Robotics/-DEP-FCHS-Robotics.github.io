@@ -1,1 +1,15 @@
+useful code to remember
 
+eval()
+
+<input type="text" value="x" id="x">
+
+<input type="text"id="myInput">
+<button onclick="var copyText = document.getElementById('myInput');
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand('copy');">x</button>
+
+<input type="text"id="x">
+
+HTML Canvas Reference
