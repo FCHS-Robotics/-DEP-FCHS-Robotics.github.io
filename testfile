@@ -12,6 +12,4 @@ eval()
   copyText.setSelectionRange(0, 99999)
   document.execCommand('copy');">x</button>
 
-<input type="text"id="x">
-
 HTML Canvas Reference
